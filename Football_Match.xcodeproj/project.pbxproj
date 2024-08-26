@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4324C8822C7A691D0029C8C9 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4324C8812C7A691D0029C8C9 /* MainWindowView.swift */; };
+		4324C8842C7A69380029C8C9 /* FirstWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4324C8832C7A69380029C8C9 /* FirstWindowView.swift */; };
+		4324C8862C7A694E0029C8C9 /* SecondWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4324C8852C7A694E0029C8C9 /* SecondWindowView.swift */; };
+		4329281C2C7A33670031BF99 /* AMNESIA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4329281B2C7A33670031BF99 /* AMNESIA.mp4 */; };
+		432928202C7A43DB0031BF99 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329281D2C7A43320031BF99 /* MainView.swift */; };
+		432928222C7A43E60031BF99 /* SidePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329281F2C7A43670031BF99 /* SidePanel.swift */; };
+		432928232C7A457A0031BF99 /* VideoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329281E2C7A434C0031BF99 /* VideoPanel.swift */; };
+		435FBD282C7B93D60014F969 /* FootballAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FBD272C7B93D60014F969 /* FootballAPI.swift */; };
+		43CA890B2C74EB1E00A7F170 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 43CA890A2C74EB1E00A7F170 /* RealityKitContent */; };
+		43CA890D2C74EB1E00A7F170 /* Football_MatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA890C2C74EB1E00A7F170 /* Football_MatchApp.swift */; };
+		43CA890F2C74EB1E00A7F170 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA890E2C74EB1E00A7F170 /* ContentView.swift */; };
+		43CA89112C74EB1E00A7F170 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA89102C74EB1E00A7F170 /* ImmersiveView.swift */; };
+		43CA89132C74EB1E00A7F170 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 43CA89122C74EB1E00A7F170 /* ImageBasedLighting.skybox */; };
+		43CA89152C74EB1F00A7F170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43CA89142C74EB1F00A7F170 /* Assets.xcassets */; };
+		43CA89182C74EB1F00A7F170 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43CA89172C74EB1F00A7F170 /* Preview Assets.xcassets */; };
+		43CA89232C74EB1F00A7F170 /* Football_MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA89222C74EB1F00A7F170 /* Football_MatchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43CA891F2C74EB1F00A7F170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43CA88FD2C74EB1E00A7F170 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43CA89042C74EB1E00A7F170;
+			remoteInfo = Football_Match;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4324C8812C7A691D0029C8C9 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		4324C8832C7A69380029C8C9 /* FirstWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWindowView.swift; sourceTree = "<group>"; };
+		4324C8852C7A694E0029C8C9 /* SecondWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWindowView.swift; sourceTree = "<group>"; };
+		4329281B2C7A33670031BF99 /* AMNESIA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = AMNESIA.mp4; path = Football_Match/AMNESIA.mp4; sourceTree = SOURCE_ROOT; };
+		4329281D2C7A43320031BF99 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4329281E2C7A434C0031BF99 /* VideoPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPanel.swift; sourceTree = "<group>"; };
+		4329281F2C7A43670031BF99 /* SidePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidePanel.swift; sourceTree = "<group>"; };
+		435FBD272C7B93D60014F969 /* FootballAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballAPI.swift; sourceTree = "<group>"; };
+		43CA89052C74EB1E00A7F170 /* Football_Match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Football_Match.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43CA89092C74EB1E00A7F170 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		43CA890C2C74EB1E00A7F170 /* Football_MatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_MatchApp.swift; sourceTree = "<group>"; };
+		43CA890E2C74EB1E00A7F170 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		43CA89102C74EB1E00A7F170 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		43CA89122C74EB1E00A7F170 /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
+		43CA89142C74EB1F00A7F170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43CA89172C74EB1F00A7F170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43CA89192C74EB1F00A7F170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43CA891E2C74EB1F00A7F170 /* Football_MatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Football_MatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43CA89222C74EB1F00A7F170 /* Football_MatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_MatchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43CA89022C74EB1E00A7F170 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43CA890B2C74EB1E00A7F170 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43CA891B2C74EB1F00A7F170 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43CA88FC2C74EB1E00A7F170 = {
+			isa = PBXGroup;
+			children = (
+				43CA89072C74EB1E00A7F170 /* Football_Match */,
+				43CA89082C74EB1E00A7F170 /* Packages */,
+				43CA89212C74EB1F00A7F170 /* Football_MatchTests */,
+				43CA89062C74EB1E00A7F170 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43CA89062C74EB1E00A7F170 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43CA89052C74EB1E00A7F170 /* Football_Match.app */,
+				43CA891E2C74EB1F00A7F170 /* Football_MatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43CA89072C74EB1E00A7F170 /* Football_Match */ = {
+			isa = PBXGroup;
+			children = (
+				43CA890C2C74EB1E00A7F170 /* Football_MatchApp.swift */,
+				43CA890E2C74EB1E00A7F170 /* ContentView.swift */,
+				4329281D2C7A43320031BF99 /* MainView.swift */,
+				4329281E2C7A434C0031BF99 /* VideoPanel.swift */,
+				4329281F2C7A43670031BF99 /* SidePanel.swift */,
+				43CA89102C74EB1E00A7F170 /* ImmersiveView.swift */,
+				43CA89122C74EB1E00A7F170 /* ImageBasedLighting.skybox */,
+				43CA89142C74EB1F00A7F170 /* Assets.xcassets */,
+				43CA89192C74EB1F00A7F170 /* Info.plist */,
+				43CA89162C74EB1F00A7F170 /* Preview Content */,
+				4324C8812C7A691D0029C8C9 /* MainWindowView.swift */,
+				435FBD272C7B93D60014F969 /* FootballAPI.swift */,
+				4324C8832C7A69380029C8C9 /* FirstWindowView.swift */,
+				4324C8852C7A694E0029C8C9 /* SecondWindowView.swift */,
+			);
+			path = Football_Match;
+			sourceTree = "<group>";
+		};
+		43CA89082C74EB1E00A7F170 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				43CA89092C74EB1E00A7F170 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		43CA89162C74EB1F00A7F170 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				43CA89172C74EB1F00A7F170 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43CA89212C74EB1F00A7F170 /* Football_MatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				43CA89222C74EB1F00A7F170 /* Football_MatchTests.swift */,
+				4329281B2C7A33670031BF99 /* AMNESIA.mp4 */,
+			);
+			path = Football_MatchTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43CA89042C74EB1E00A7F170 /* Football_Match */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43CA89262C74EB1F00A7F170 /* Build configuration list for PBXNativeTarget "Football_Match" */;
+			buildPhases = (
+				43CA89012C74EB1E00A7F170 /* Sources */,
+				43CA89022C74EB1E00A7F170 /* Frameworks */,
+				43CA89032C74EB1E00A7F170 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Football_Match;
+			packageProductDependencies = (
+				43CA890A2C74EB1E00A7F170 /* RealityKitContent */,
+			);
+			productName = Football_Match;
+			productReference = 43CA89052C74EB1E00A7F170 /* Football_Match.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43CA891D2C74EB1F00A7F170 /* Football_MatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43CA89292C74EB1F00A7F170 /* Build configuration list for PBXNativeTarget "Football_MatchTests" */;
+			buildPhases = (
+				43CA891A2C74EB1F00A7F170 /* Sources */,
+				43CA891B2C74EB1F00A7F170 /* Frameworks */,
+				43CA891C2C74EB1F00A7F170 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43CA89202C74EB1F00A7F170 /* PBXTargetDependency */,
+			);
+			name = Football_MatchTests;
+			productName = Football_MatchTests;
+			productReference = 43CA891E2C74EB1F00A7F170 /* Football_MatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43CA88FD2C74EB1E00A7F170 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					43CA89042C74EB1E00A7F170 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					43CA891D2C74EB1F00A7F170 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 43CA89042C74EB1E00A7F170;
+					};
+				};
+			};
+			buildConfigurationList = 43CA89002C74EB1E00A7F170 /* Build configuration list for PBXProject "Football_Match" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43CA88FC2C74EB1E00A7F170;
+			productRefGroup = 43CA89062C74EB1E00A7F170 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43CA89042C74EB1E00A7F170 /* Football_Match */,
+				43CA891D2C74EB1F00A7F170 /* Football_MatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43CA89032C74EB1E00A7F170 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4329281C2C7A33670031BF99 /* AMNESIA.mp4 in Resources */,
+				43CA89152C74EB1F00A7F170 /* Assets.xcassets in Resources */,
+				43CA89182C74EB1F00A7F170 /* Preview Assets.xcassets in Resources */,
+				43CA89132C74EB1E00A7F170 /* ImageBasedLighting.skybox in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43CA891C2C74EB1F00A7F170 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43CA89012C74EB1E00A7F170 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43CA890F2C74EB1E00A7F170 /* ContentView.swift in Sources */,
+				432928202C7A43DB0031BF99 /* MainView.swift in Sources */,
+				4324C8862C7A694E0029C8C9 /* SecondWindowView.swift in Sources */,
+				432928232C7A457A0031BF99 /* VideoPanel.swift in Sources */,
+				4324C8842C7A69380029C8C9 /* FirstWindowView.swift in Sources */,
+				435FBD282C7B93D60014F969 /* FootballAPI.swift in Sources */,
+				4324C8822C7A691D0029C8C9 /* MainWindowView.swift in Sources */,
+				43CA890D2C74EB1E00A7F170 /* Football_MatchApp.swift in Sources */,
+				43CA89112C74EB1E00A7F170 /* ImmersiveView.swift in Sources */,
+				432928222C7A43E60031BF99 /* SidePanel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43CA891A2C74EB1F00A7F170 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43CA89232C74EB1F00A7F170 /* Football_MatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43CA89202C74EB1F00A7F170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43CA89042C74EB1E00A7F170 /* Football_Match */;
+			targetProxy = 43CA891F2C74EB1F00A7F170 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43CA89242C74EB1F00A7F170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Debug;
+		};
+		43CA89252C74EB1F00A7F170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Release;
+		};
+		43CA89272C74EB1F00A7F170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Football_Match/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bgilles.Football-Match";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		43CA89282C74EB1F00A7F170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Football_Match/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bgilles.Football-Match";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		43CA892A2C74EB1F00A7F170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bgilles.Football-MatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Football_Match.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Football_Match";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Debug;
+		};
+		43CA892B2C74EB1F00A7F170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bgilles.Football-MatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Football_Match.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Football_Match";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43CA89002C74EB1E00A7F170 /* Build configuration list for PBXProject "Football_Match" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43CA89242C74EB1F00A7F170 /* Debug */,
+				43CA89252C74EB1F00A7F170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43CA89262C74EB1F00A7F170 /* Build configuration list for PBXNativeTarget "Football_Match" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43CA89272C74EB1F00A7F170 /* Debug */,
+				43CA89282C74EB1F00A7F170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43CA89292C74EB1F00A7F170 /* Build configuration list for PBXNativeTarget "Football_MatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43CA892A2C74EB1F00A7F170 /* Debug */,
+				43CA892B2C74EB1F00A7F170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43CA890A2C74EB1E00A7F170 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 43CA88FD2C74EB1E00A7F170 /* Project object */;
+}
