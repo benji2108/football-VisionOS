@@ -1,29 +1,27 @@
 import SwiftUI
 
 struct FirstWindowView: View {
-    @State private var dataString: String = "Loading..."
-    @State private var errorOccurred: Bool = false
+    @State private var result: String = "Loading data..."
 
     var body: some View {
         VStack {
-            if errorOccurred {
-                Text("Failed to load data.")
-                    .foregroundColor(.red)
-            } else {
-                Text(dataString)
-                    .foregroundColor(.green)
-            }
+            Text(result)
+                .foregroundColor(.blue)
+                .padding()
+                .onAppear {
+                    loadFixtureStatistics()
+                }
         }
-        .onAppear {
-            APIManager.shared.fetchLeagues { result in
-                DispatchQueue.main.async {
-                    switch result {
-                    case .success(let data):
-                        self.dataString = data
-                    case .failure(let error):
-                        self.dataString = error.localizedDescription
-                        self.errorOccurred = true
-                    }
+    }
+
+    private func loadFixtureStatistics() {
+        APIManager.shared.fetchFixtureStatistics(fixtureId: 215662, type: "Total Shots", teamId: 463) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let dataString):
+                    self.result = dataString
+                case .failure(let error):
+                    self.result = "Error: \(error.localizedDescription)"
                 }
             }
         }
