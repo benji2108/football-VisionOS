@@ -2,45 +2,95 @@ import Foundation
 
 class APIManager {
     static let shared = APIManager()
-    let baseURL = "https://v3.football.api-sports.io"
-    let apiKey = "8caf8a128fc530a7cebe15efc10b6de7"  // Remplacez par votre propre clé API
+    private let baseURL = "https://v3.football.api-sports.io"
+    private let apiKey = "8caf8a128fc530a7cebe15efc10b6de7"  // Remplacez par votre clé API réelle
 
-    // Fonction pour récupérer les statistiques d'un match
-    func fetchFixtureStatistics(fixtureId: Int, type: String? = nil, teamId: Int? = nil, completion: @escaping (Result<String, Error>) -> Void) {
-        var urlString = "\(baseURL)/fixtures/statistics?fixture=\(fixtureId)"
-        if let type = type {
-            urlString += "&type=\(type)"
-        }
-        if let teamId = teamId {
-            urlString += "&team=\(teamId)"
-        }
-
-        guard let url = URL(string: urlString) else {
-            completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
+    // Fonction existante pour récupérer les statistiques d'un match
+    func fetchFixtureStatistics(fixtureId: Int, completion: @escaping (Result<[StatisticItem], Error>) -> Void) {
+        guard let url = URL(string: "\(baseURL)/fixtures/statistics?fixture=\(fixtureId)") else {
+            completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "URL invalide"])))
             return
         }
 
-        var request = URLRequest(url: url, timeoutInterval: Double.infinity)
+        var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.addValue(apiKey, forHTTPHeaderField: "x-rapidapi-key")
+        request.addValue(apiKey, forHTTPHeaderField: "x-apisports-key")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
 
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
+                print("Erreur lors de la requête : \(error.localizedDescription)")
                 completion(.failure(error))
                 return
             }
 
-            if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
-                if let data = data, let dataString = String(data: data, encoding: .utf8) {
-                    print("Data: \(dataString)")
-                    completion(.success(dataString))
+            guard let data = data else {
+                print("Aucune donnée reçue")
+                completion(.failure(NSError(domain: "", code: -3, userInfo: [NSLocalizedDescriptionKey: "Aucune donnée reçue"])))
+                return
+            }
+
+            // Afficher le JSON brut pour le débogage
+            if let dataString = String(data: data, encoding: .utf8) {
+                print("JSON reçu : \(dataString)")
+            }
+
+            do {
+                let decoder = JSONDecoder()
+                let statisticsResponse = try decoder.decode(FixtureStatisticsResponse.self, from: data)
+                if let statistics = statisticsResponse.response {
+                    completion(.success(statistics))
                 } else {
-                    completion(.failure(NSError(domain: "", code: -2, userInfo: [NSLocalizedDescriptionKey: "Invalid data"])))
+                    completion(.failure(NSError(domain: "", code: -4, userInfo: [NSLocalizedDescriptionKey: "Pas de données dans la réponse"])))
                 }
-            } else {
-                let statusCode = (response as? HTTPURLResponse)?.statusCode ?? -1
-                completion(.failure(NSError(domain: "", code: statusCode, userInfo: [NSLocalizedDescriptionKey: "Failed authentication or other network error"])))
+            } catch {
+                print("Erreur de décodage : \(error)")
+                completion(.failure(error))
+            }
+        }.resume()
+    }
+
+    // Nouvelle fonction pour récupérer les matchs d'une date donnée
+    func fetchFixtures(forDate date: String, completion: @escaping (Result<[Fixture], Error>) -> Void) {
+        guard let url = URL(string: "\(baseURL)/fixtures?date=\(date)") else {
+            completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "URL invalide"])))
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue(apiKey, forHTTPHeaderField: "x-apisports-key")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Erreur lors de la requête : \(error.localizedDescription)")
+                completion(.failure(error))
+                return
+            }
+
+            guard let data = data else {
+                print("Aucune donnée reçue")
+                completion(.failure(NSError(domain: "", code: -3, userInfo: [NSLocalizedDescriptionKey: "Aucune donnée reçue"])))
+                return
+            }
+
+            // Afficher le JSON brut pour le débogage
+            if let dataString = String(data: data, encoding: .utf8) {
+                print("JSON reçu : \(dataString)")
+            }
+
+            do {
+                let decoder = JSONDecoder()
+                let fixturesResponse = try decoder.decode(FixturesResponse.self, from: data)
+                if let fixtures = fixturesResponse.response {
+                    completion(.success(fixtures))
+                } else {
+                    completion(.failure(NSError(domain: "", code: -4, userInfo: [NSLocalizedDescriptionKey: "Pas de données dans la réponse"])))
+                }
+            } catch {
+                print("Erreur de décodage : \(error)")
+                completion(.failure(error))
             }
         }.resume()
     }
